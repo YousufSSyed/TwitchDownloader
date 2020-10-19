@@ -119,10 +119,16 @@ Generates a mask file in addition to the regular chat file.
 (Default: 0.2) Time in seconds to update chat render output.
 
 **-\-input-args**
- (Default: -framerate {fps} -f rawvideo -analyzeduration {max_int} -probesize {max_int} -pix_fmt bgra -video_size {width}x{height} -i -) Input arguments for ffmpeg chat render.
 
+    --input-args="<arguments>"
+ (Default: -framerate {fps} -f rawvideo -analyzeduration {max_int} -probesize {max_int} -pix_fmt bgra -video_size {width}x{height} -i -) Input arguments for ffmpeg chat render.
+ 
 **-\-output-args**
+
+    --output-args="<arguments>"
 (Default: -c:v libx264 -preset veryfast -crf 18 -pix_fmt yuv420p "{save_path}") Output arguments for ffmpeg chat render.
+**Note: {save_path} is required in output args**
+
 ## Example Commands
 Download a VOD
 
